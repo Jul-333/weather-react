@@ -1,0 +1,13 @@
+.widget-wrapper {
+    display: flex;
+    font-size: 19px;
+    font-weight: 800;
+    text-shadow: 2px 1px 0px white, 0 0 1em white;
+}
+
+.widget-wrapper p {
+    margin: 0;
+    padding: 0;
+    line-height: 36px;
+    margin-right: 10px;
+}

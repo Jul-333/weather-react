@@ -1,0 +1,27 @@
+.card-city ul {
+    list-style: none;
+    padding: 0;
+}
+
+.card-city-item:first-child {
+    font-size: 19px;
+    font-weight: 800;
+}
+
+.card-city-item {
+    font-size: 18px;
+    height: 30px;
+    text-align: center;
+}
+.card-city-item span {
+    font-weight: 700;
+}
+.wind-icon {
+    width: 17px;
+    height: 17px;
+}
+
+.icon-weather {
+    width: 27px;
+    height: 27px;
+}

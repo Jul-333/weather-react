@@ -1,0 +1,19 @@
+.wrapper-page {
+    max-width: 1190px;
+    width: 100%;
+    margin: 20px auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.wrapper-search-widget {
+    height: 36px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.wrapper-search-widget {
+    position: relative;
+}

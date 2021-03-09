@@ -1,0 +1,22 @@
+.btn-city {
+    height: 35px;
+    width: 101px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn-delete {
+    margin-right: 41px;
+    background: #3333335e;
+}
+
+.btn-delete:hover {
+    background: #3333338f;
+}
+.btn-update {
+    background: rgb(73 137 220 / 47%);
+}
+
+.btn-update:hover {
+    background: rgb(73 137 220 / 63%);
+}
