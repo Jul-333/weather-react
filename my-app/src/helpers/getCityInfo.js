@@ -14,7 +14,7 @@ const getCityInfo = async (city, coordinates) => {
     minute: "2-digit",
   });
   const id = Date.now();
-  const humidity = result.currently.humidity * 100;
+  const humidity = Math.round(result.currently.humidity * 100);
 
   const infoCityWeather = {
     id,

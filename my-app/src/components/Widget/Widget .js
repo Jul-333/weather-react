@@ -1,11 +1,17 @@
-import React, { Component } from "react";
-import calcMinTemp from "../../helpers/calcMinTemp";
-import calcMaxTemp from "../../helpers/calcMaxTemp";
+import React from "react";
+import calcMaxMinTemp from "../../helpers/calcMaxMinTemp";
 import "./Widget.css";
 
 const Widget = ({ cityList }) => {
-  const { cityMin, temperatureMin } = calcMinTemp(cityList);
-  const { cityMax, temperatureMax } = calcMaxTemp(cityList);
+  const { city: cityMin, temperature: temperatureMin } = calcMaxMinTemp(
+    cityList,
+    "minTemperature"
+  );
+  const { city: cityMax, temperature: temperatureMax } = calcMaxMinTemp(
+    cityList,
+    "maxTemperature"
+  );
+
   return (
     <div className="widget-wrapper">
       <p>
