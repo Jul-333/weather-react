@@ -1,9 +1,9 @@
 import React from "react";
 import MapboxAutocomplete from "react-mapbox-autocomplete";
 import CONFIG from "../../config";
-import "./Select.css";
+import "./SearchInput.css";
 
-const SelectComponent = ({ addWeather, cityList }) => {
+const SearchInput = ({ addWeather, cityList }) => {
   const chooseCity = (...rest) => {
     const [, lat, lng, city] = rest;
     const isNewCity = !cityList.some((item) => item.name === city);
@@ -24,4 +24,4 @@ const SelectComponent = ({ addWeather, cityList }) => {
     />
   );
 };
-export default SelectComponent;
+export default SearchInput;

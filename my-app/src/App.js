@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import SelectComponent from "./components/Select/Select";
+import SearchInput from "./components/SearchInput/SearchInput";
 import CardsGallery from "./components/CardsGallery/CardsGallery";
 import Widget from "./components/Widget/Widget ";
 import setLocalStorage from "./helpers/setLocalStorage";
@@ -43,7 +43,7 @@ const App = () => {
   return (
     <div className="wrapper-page">
       <div className="wrapper-search-widget">
-        <SelectComponent addWeather={addWeather} cityList={cityList} />
+        <SearchInput addWeather={addWeather} cityList={cityList} />
         {!isEmptyCityList && <Widget cityList={cityList} />}
         <Loader loading={loading} />
       </div>
